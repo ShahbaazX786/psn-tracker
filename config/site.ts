@@ -23,24 +23,16 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Rules",
+      href: "/pricing",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "About",
+      href: "/about",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Upgrade",
+      href: "/upgrade",
     },
     {
       label: "Settings",
