@@ -3,51 +3,56 @@ import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { SearchIcon } from "@/components/icons";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 mt-5">
+      <div className="inline-block max-w-xl text-center justify-center leading-8">
+        <span className={title({ size: "lg" })}>Everything&nbsp;</span>
+        <span className={title({ size: "lg", color: "blue" })}>
+          Playstation&nbsp;
+        </span>
         <br />
-        <span className={title()}>
-          websites regardless of your design experience.
+        <span className={title({ size: "lg", fullWidth: true })}>
+          All at once here
         </span>
         <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+          Enjoy the greatest PSN experience ever.
         </div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-8">
         <Link
-          isExternal
           className={buttonStyles({
             color: "primary",
             radius: "full",
             variant: "shadow",
+            size: "lg",
           })}
-          href={siteConfig.links.docs}
+          href={"/"}
         >
-          Documentation
+          Get Started
         </Link>
         <Link
-          isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
+          className={buttonStyles({
+            variant: "bordered",
+            radius: "full",
+            size: "lg",
+          })}
+          href={"/"}
         >
-          <GithubIcon size={20} />
-          GitHub
+          <SearchIcon size={20} />
+          Check Latest Games
         </Link>
       </div>
 
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
+            Check out <Code color="primary">About Section </Code> for proper
+            guides
           </span>
         </Snippet>
       </div>
