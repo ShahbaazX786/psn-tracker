@@ -8,14 +8,16 @@ import { SearchIcon } from "@/components/icons";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 mt-5">
       <div className="inline-block max-w-xl text-center justify-center leading-8">
         <span className={title({ size: "lg" })}>Everything&nbsp;</span>
         <span className={title({ size: "lg", color: "blue" })}>
           Playstation&nbsp;
         </span>
         <br />
-        <span className={title({ size: "lg" })}>All at once here</span>
+        <span className={title({ size: "lg", fullWidth: true })}>
+          All at once here
+        </span>
         <div className={subtitle({ class: "mt-4" })}>
           Enjoy the greatest PSN experience ever.
         </div>
@@ -49,7 +51,8 @@ export default function Home() {
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Check out about <Code color="primary">for proper guides</Code>
+            Check out <Code color="primary">About Section </Code> for proper
+            guides
           </span>
         </Snippet>
       </div>
