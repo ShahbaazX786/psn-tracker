@@ -12,7 +12,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import NextLink from "next/link";
 
-import { DiscordIcon, GithubIcon, Logo, TwitterIcon } from "@/components/icons";
+import { DiscordIcon, GithubIcon, TwitterIcon } from "@/components/icons";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 
@@ -22,8 +22,10 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">PSinfo</p>
+            {/* <Logo /> 
+            Logo to be updated here.
+            */}
+            <p className="font-bold text-inherit uppercase text-lg">Darbaar</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
