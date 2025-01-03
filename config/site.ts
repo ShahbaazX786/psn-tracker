@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Rules",
-      href: "/pricing",
+      href: "/rules",
     },
     {
       label: "About",
@@ -24,7 +24,7 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: "Rules",
-      href: "/pricing",
+      href: "/rules",
     },
     {
       label: "About",
