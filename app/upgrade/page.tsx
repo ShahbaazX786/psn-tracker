@@ -4,6 +4,7 @@ export default function DocsPage() {
   return (
     <div>
       <h1 className={title()}>Upgrade</h1>
+      <p>Price list coming soon.</p>
     </div>
   );
 }
