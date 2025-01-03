@@ -1,3 +1,6 @@
+import { Code } from "@nextui-org/code";
+import { Snippet } from "@nextui-org/snippet";
+
 import { title } from "@/components/primitives";
 
 export default function AboutPage() {
@@ -11,7 +14,11 @@ export default function AboutPage() {
         Minister, thief or soldier— and the Minister (Mantri) has to guess the
         identity of the thief.
       </p>
-      <p>In short, Desi Amongus.</p>
+      <Snippet hideCopyButton hideSymbol variant="bordered">
+        <span>
+          In Short <Code color="danger">Desi AmongUs</Code>
+        </span>
+      </Snippet>
     </div>
   );
 }
